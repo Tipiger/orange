@@ -19,9 +19,9 @@ then
 else
 	echo "kill "$pid
 	#kill -s QUIT $pid
-	nginx -p `pwd` -c ./conf/nginx.conf -s stop
+	/usr/local/openresty/nginx/sbin/nginx -p `pwd` -c ./conf/nginx.conf -s stop
 	echo "restart orange.."
 fi
 
 mkdir -p logs
-nginx -p `pwd` -c ./conf/nginx.conf
+/usr/local/openresty/nginx/sbin/nginx -p `pwd` -c ./conf/nginx.conf

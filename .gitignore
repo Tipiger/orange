@@ -84,6 +84,7 @@ Thumbs.db
 
 /conf/nginx.conf
 /conf/orange.conf
+start.sh
 *.bt
 *.svg
 *.cbt
